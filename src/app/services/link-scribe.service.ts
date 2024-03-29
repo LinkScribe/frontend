@@ -12,16 +12,16 @@ export class LinkScribeService {
 
   //Obtener el titulo del sitio
   getTittle(link: any): Observable<any> {
-    return this.http.post<any>("http://localhost:8080/webInfo/title", link);
+    return this.http.post<any>("http://34.16.170.210:8080/webInfo/title", link);
 
   }
   //Obtener la imagen
   getImage(link: any): Observable<any> {
-    return this.http.post<any>("http://localhost:8080/webInfo/image", link);
+    return this.http.post<any>("http://34.16.170.210:8080/webInfo/image", link);
   
   }
   predict(link: any): Observable<any[]> {
-    return this.http.post<any[]>("http://localhost:8080/LScribe-Model/predict", link);
+    return this.http.post<any[]>("http://34.16.170.210:8080/LScribe-Model/predict", link);
    
   }
 
