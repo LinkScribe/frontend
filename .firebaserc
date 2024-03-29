@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "bd-linkscribe": {
+      "hosting": {
+        "link-scribe": [
+          "bd-linkscribe"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "bd-linkscribe"
+  }
+}

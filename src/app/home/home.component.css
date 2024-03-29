@@ -2,27 +2,34 @@
 
 * {
     box-sizing: border-box;
+    color:#ffffff;
+    background: black;
+    background-color: black;
+    
   }
   html,
+   
+
+    
   body {
-    background: #ecf0f3;
+    background: #0d1117;
   }
-  h1 {
+  h1{
     margin: 0;
     padding: 0;
+    margin-top: -20rem;
+    background: #0d1117;
   }
   .custom-form {
     min-width: 300px;
-    max-width: 60%;
+    max-width: 94%;
     margin: 0px auto;
     background: rgba(255, 255, 255, 0.15);
-    padding: 2rem 3rem;
+    padding: 22rem 4rem;
     margin: auto;
     border-radius: 2.5rem;
-    background-color: #ecf0f3;
-    box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #ffffff;
-    color: black;
-    margin-top: 10rem;
+    background-color:#0d1117;
+    margin-top: 0rem;
   }
   .custom-form input {
     display: block;
@@ -31,10 +38,9 @@
     border-radius: 0.5rem;
     padding: 1rem;
     border: none;
-    box-shadow: inset -5px -5px 15px rgba(255, 255, 255, 0.8), inset 5px 5px 10px
-        rgba(0, 0, 0, 0.1);
+    box-shadow: inset -5px -5px 15px rgb(255 255 255 / 0%), inset 5px 5px 10px rgb(0 0 0 / 0%);;
     border: 0 none;
-    background: #ebf5fc;
+    background: #262730;
   }
   .custom-form button {
     text-transform: uppercase;
@@ -43,11 +49,21 @@
     font-size: 0.875rem;
     color: #ffffff;
     font-weight: bold;
-    background-color: #bcd8c1;
+    background-color:#21262d;
     width: 100%;
     display: block;
     padding: 0.875rem 1rem;
     border-radius: 1.5rem;
-    box-shadow: 3px 3px 8px #b1b1b1, -3px -3px 8px #ffffff;
+    box-shadow: 3px 3px 8px #121212;
     cursor: pointer;
   }
+  .example-card {
+    padding: 0.875rem 1rem;
+    border-radius: 1.5rem;
+    margin-bottom: 8px;
+    top: 26px;
+    background-color:rgba(112, 104, 104, 0.137) ;
+    color:#ffffff
+  }
+ 
+  
