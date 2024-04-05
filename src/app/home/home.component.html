@@ -1,8 +1,8 @@
 <div class="register">
     <form class="custom-form">
-      <h1 >LinkScribe</h1>
+      <h1 >LinkScribe 📝</h1>
       <p></p>
-      <mat-card-content class="h1">Welcome to LinkScribe the app that allows you to fats research web content using ML (Machine Learning based model 🤖) to classifying any webpage into a general subject so you only choose the ones you are really interested about</mat-card-content>
+      <p>Welcome to LinkScribe the app that allows you to fats research web content using ML (Machine Learning based model 🤖) to classifying any webpage into a general subject so you only choose the ones you are really interested about</p>
       <input 
         type="text"
         name="link"
@@ -10,34 +10,39 @@
         placeholder="Write the URL of the web page you whish to know the what subject it is about "
         required="required"
       />
-          <button type="submit"  (click)="getInfo()">Clasify</button>
-    <p></p>
-    
- 
-    <mat-card class="example-card" *ngIf="mostrar" >
+      <button  (click)="getInfo()">Classify </button>
+      <p></p>
+    <mat-card *ngIf="mostrar" >
     <mat-card-header>
-      <mat-card-title-group>
-        <mat-card-title *ngFor="let valor of valoresRespuesta">{{ valor }}</mat-card-title>         
-        <mat-card-title >{{prediccion[0]}}</mat-card-title>
-        <mat-card-subtitle style="color: white;">Descripción</mat-card-subtitle>
-        <img mat-card-sm-image *ngFor="let img of valorImagen" [src]="img">
+      <mat-card-title-group style="color: darkslategray;">
+        <mat-card-title>Title:</mat-card-title>
+        <mat-card-subtitle style="color: white;" *ngFor="let valor of valoresRespuesta">{{ valor }}</mat-card-subtitle> 
+        <mat-card-title>Category:</mat-card-title>        
+        <mat-card-subtitle style="color: white;" >{{prediccion}}</mat-card-subtitle>
+        <mat-divider></mat-divider>
+        <mat-card-title>Descripción</mat-card-title>
+        <mat-divider></mat-divider>
+        
       </mat-card-title-group>
     </mat-card-header>
-    <mat-card-content >
-      {{prediccion[1]}}
-    </mat-card-content>
-  </mat-card>
-  
-  <div *ngFor="let dato of prediccion">
-    <h2>{{ dato.prediction }}</h2>
-    <p>{{ dato.webText }}</p>
-    <!-- Agrega aquí más elementos HTML según la estructura de tu objeto JSON -->
-  </div>
-  
+    <div style="height: 500px; overflow-y: scroll;">
+      <img mat-card-image *ngIf="image" [src]="image" alt="Imagen">
+    </div>
+      <section>
+        <button mat-icon-button (click)="reloadPage()">
+          <mat-icon>refresh</mat-icon>
+        </button>
+      </section>
+      <mat-card-footer>
+        <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+      </mat-card-footer>
+    </mat-card>
+        
+
     </form>
 
  
-  </div>
+</div>
 
 
   

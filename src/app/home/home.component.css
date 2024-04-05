@@ -62,8 +62,24 @@
     border-radius: 1.5rem;
     margin-bottom: 8px;
     top: 26px;
-    background-color:rgba(112, 104, 104, 0.137) ;
+    background-color:rgba(225, 198, 198, 0.137) ;
     color:#ffffff
+  }
+  .example-container {
+    width: 500px;
+    height: 300px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+  }
+  
+  .example-sidenav-content {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .example-sidenav {
+    padding: 20px;
   }
  
   
