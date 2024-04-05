@@ -12,15 +12,15 @@ export class LinkScribeService {
 
   //Obtener el titulo del sitio
   getTittle(link: any): Observable<any> {
-    return this.http.post<any>("http://34.16.170.210:8080/webInfo/title", link);
+    return this.http.post<any>("https://link-backend-nyy5owa2fa-uc.a.run.app/webInfo/title", link);
 
   }
   //Obtener la imagen
   getImage(link: any): Observable<Blob> {
-    return this.http.post("http://34.16.170.210:8080/webInfo/image",link,{ responseType: 'blob' });
+    return this.http.post("https://link-backend-nyy5owa2fa-uc.a.run.app/webInfo/image",link,{ responseType: 'blob' });
   }
   predict(link: any): Observable<any[]> {
-    return this.http.post<any[]>("http://34.16.170.210:8080/LScribe-Model/predict", link);
+    return this.http.post<any[]>("https://link-backend-nyy5owa2fa-uc.a.run.app/LScribe-Model/predict", link);
    
   }
 
