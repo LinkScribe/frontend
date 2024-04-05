@@ -19,6 +19,8 @@ export class LinkScribeService {
   getImage(link: any): Observable<Blob> {
     return this.http.post("https://link-backend-nyy5owa2fa-uc.a.run.app/webInfo/image",link,{ responseType: 'blob' });
   }
+
+  //Realizar la predicción
   predict(link: any): Observable<any[]> {
     return this.http.post<any[]>("https://link-backend-nyy5owa2fa-uc.a.run.app/LScribe-Model/predict", link);
    
